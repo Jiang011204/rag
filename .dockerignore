@@ -1,0 +1,12 @@
+# 模型由 docker-compose 挂载 ./models:/models 提供，
+# 打进镜像既占 92MB 又会与挂载重复（挂载会覆盖镜像内的那份）。
+models/
+
+.git/
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/
+*.log
